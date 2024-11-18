@@ -1,0 +1,23 @@
+{
+  "name": "dona-leche-wed-scraping",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "get-collections": "bun run src/scripts/get-collections.ts",
+    "get-all-products": "bun run src/scripts/get-all-products.ts",
+    "donaleche": "bun run get-collections && bun run get-all-products"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/slug": "^5.0.9",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "puppeteer": "^23.7.1",
+    "slug": "^10.0.0"
+  }
+}
